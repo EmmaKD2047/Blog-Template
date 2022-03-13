@@ -1,0 +1,244 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection{
+    background-color: #d9b38c;
+}
+
+/*Body Styles*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #e6e6ff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #bf8040;
+    border-radius: 3px;
+}
+
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.logo{
+    padding-top: 20px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu{
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.dropbtn:hover{
+    transform: rotate(360deg);
+    transition: .9s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bf8040;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ac7339;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Post Description*/
+.description{
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+#postimage{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+h2{
+    color: #bf8040;
+    margin-bottom: 5px;
+}
+
+#date{
+    color: #0e1830;
+    margin-top: 0;
+}
+
+/*Content Section*/
+.content{
+    margin-left: 50px;
+    padding-top: 20px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+    display: table;
+}
+
+.post{
+    width: 60%;
+    text-align: justify;
+    display: table-cell;
+}
+
+.post p{
+    margin: 0;
+}
+
+.others{
+    height: 500px;
+    width: 40%;
+    display: table-cell;
+    position: fixed;
+    top: 300px;
+    overflow: auto;
+}
+
+.search{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 120px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#searchtitle{
+    color: black;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#searchbar{
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#searchbar::placeholder{
+    padding-left: 10px;
+}
+
+.categories{
+    background: white;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    margin-left: 120px;
+    border-radius: 4px;
+}
+
+#categorytitle{
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.categories p{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #adadad;
+}
+
+.categories a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Author Info*/
+.author{
+    display: flex;
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+#authorpic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: fill;
+}
+
+#authordesc{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#jobdesc{
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #0e1830; 
+}
+
+/*Media Queries*/
+@media screen and (max-width: 450px) {
+    div.description{
+        text-align: center;
+        padding: 0;
+    }
+
+    div.content{
+        margin-left: 10%;
+    }
+}

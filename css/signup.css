@@ -1,0 +1,88 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection{
+    background-color: #d9b38c;
+}
+
+body{
+    background: #e6e6ff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.centerform{
+    background: white;
+    width: 400px;
+    padding: 50px;
+    margin: 5% auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 0px 0 rgba(0, 0, 0, 0.01);
+}
+
+form{
+    text-align: center;
+}
+
+/*Input Styles*/
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border-color: transparent;
+    border: 1px solid #130d06;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    color: #130d06;
+}
+
+/*Button Styles*/
+button{
+    background: #ac7339;
+    color: white;
+    border: transparent;
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+button:hover{
+    background: #bf8040;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(-3px);
+}
+
+.signin{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 560px) {
+    div.centerform{
+        width: 70%;
+        text-align: center;
+        margin: 30% auto;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    div.signin{
+        margin-left: 150px;
+    }
+}
